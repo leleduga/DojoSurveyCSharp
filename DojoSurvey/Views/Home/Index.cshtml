@@ -1,0 +1,46 @@
+@model SurveyViewModel
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>DojoSurvey</title>
+        <link rel="stylesheet" href="~/css/style.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+<div class="container">
+    <form action="method" method="post">
+
+    <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type ="textarea" class="form-control" name="name" placeholder="Name">
+        <label for="location">Dojo Location:</label>
+        <select name="location" class="form-control" name="location" placeholder="Dojo Location">
+            <option>Chicago</option>
+            <option>Seattle</option>
+            <option>San Fran</option>
+            <option>New York</option>
+        </select>   
+    </div>
+    <div class="form-group">
+        <label for="language">Favorite Language:</label>
+        <select name="language" class="form-control" name="language" placeholder="Language">
+            <option>Python</option>
+            <option>JavaScript</option>
+            <option>C#</option>
+            <option>Congolese</option>
+        </select>   
+    </div>
+    <div class="form-group">
+        <label for="comment">Comment (Optional):</label>
+        <input type="textarea" rows= '10' class="form-control" name="comment" placeholder="Comment">
+    </div>  
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
+        
